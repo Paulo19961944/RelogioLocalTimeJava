@@ -1,9 +1,8 @@
-package com.mycompany.relogiotime;
+package oo.java ;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class RelogioTime {
-
     public static void main(String[] args) {
         while(true){
             try{
@@ -12,9 +11,9 @@ public class RelogioTime {
                 e.printStackTrace();
             }
             LocalDateTime time = LocalDateTime.now();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
             String formattedTime = time.format(formatter);
-            System.out.println("A Data e o Horario Atual é -> " + formattedTime);
+            System.out.println("O Horario Atual é -> " + formattedTime);
         }
     }
 }
